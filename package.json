@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-jpo-patent-info",
+  "version": "0.1.0",
+  "description": "JPO patent information: Japanese patent, utility model and trademark status from the Japan Patent Office public registers, looked up by number.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-jpo-patent-info": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "jpo-patent-info"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-jpo-patent-info.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-afb133f8768e98ad1fc75c063a24a212cafb5827e61af0b67edd8639cfe2decc",
+    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+  }
+}
