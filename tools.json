@@ -1,0 +1,53 @@
+[
+  {
+    "name": "jp_patent_status",
+    "description": "Look up a Japanese patent or utility model by number and get its legal status: current stage (filing, examination, grant, refused, ceased), the latest status event, application/publication/registration numbers and dates, title, applicant or right holder, and FI classifications. Source: Japan Patent Office public register. Examples: application number 2020-000001, registration number 6770223.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string",
+          "description": "Japanese number, e.g. \"2020-000001\" (application or publication, year-serial) or \"6770223\" (registration). Prefixes like 特願 are accepted."
+        },
+        "number_type": {
+          "type": "string",
+          "enum": [
+            "application",
+            "publication",
+            "registration",
+            "utility_model_application",
+            "utility_model_registration"
+          ],
+          "description": "What the number is. Default: application."
+        }
+      },
+      "required": [
+        "number"
+      ]
+    }
+  },
+  {
+    "name": "jp_trademark_status",
+    "description": "Look up a Japanese trademark by application or registration number: mark text (word marks), kana reading, goods/services classes, owner, application and registration dates, mark type and status code. Source: Japan Patent Office public trademark register. Examples: application 2020-000001, registration 6316886.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string",
+          "description": "Trademark application number (\"2020-000001\" or \"2020000001\") or registration number (\"6316886\")."
+        },
+        "number_type": {
+          "type": "string",
+          "enum": [
+            "application",
+            "registration"
+          ],
+          "description": "What the number is. Default: application."
+        }
+      },
+      "required": [
+        "number"
+      ]
+    }
+  }
+]
