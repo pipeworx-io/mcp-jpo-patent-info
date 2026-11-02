@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-jpo-patent-info",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "JPO patent information: Japanese patent, utility model and trademark status from the Japan Patent Office public registers, looked up by number.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "jpo-patent-info",
     "gatewaySlug": "jpo-patent-info",
-    "sourceHash": "v1-aded981e2e6e1699b8ad8d2cd62c29154c9fb0d1a1a18daf90399e695bb9945f",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-ccbb9a8839c8ac7de924a151d32ae0c443e8678932efcad86ad9547cf15ec37a",
+    "sourceCommit": "236b0a46d91f343fe094da9f499c378e88f78312"
   }
 }
